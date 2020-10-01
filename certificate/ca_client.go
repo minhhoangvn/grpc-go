@@ -48,9 +48,9 @@ func main(port int, csr string) {
 		Metadata: metaStruct,
 	})
 	if err != nil {
-		log.Fatalf("could not greet: %v", err)
+		log.Fatalf("could not create certificate: %v", err)
 	}
-	log.Printf("Greeting: %s", r.GetCertChain())
+	log.Printf("Certificate: %s", r.GetCertChain())
 }
 
 func Run(port int, csr string) {
